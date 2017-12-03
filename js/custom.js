@@ -31,7 +31,21 @@ $(function () {
         autoplay: true,
         smartSpeed: 700,
         loop: true,
-        autoplayHoverPause: true
+        autoplayHoverPause: true,
+        responsive: {
+            // breakpoint from 0 up
+            0: {
+                items: 1
+            },
+            // breakpoint from 480 up
+            480: {
+                items: 2
+            },
+            // breakpoint from 768 up
+            768: {
+                items: 3
+            }
+        }
     });
 
 });
@@ -71,7 +85,25 @@ $(function () {
         autoplay: true,
         smartSpeed: 700,
         loop: true,
-        autoplayHoverPause: true
+        autoplayHoverPause: true,
+        responsive: {
+            // breakpoint from 0 up
+            0: {
+                items: 1
+            },
+            // breakpoint from 480 up
+            480: {
+                items: 3
+            },
+            // breakpoint from 768 up
+            768: {
+                items: 5
+            },
+            // breakpoint from 992 up
+            992: {
+                items: 6
+            }
+        }
     });
 
 });
@@ -99,7 +131,7 @@ $(function () {
 // Smooth scrolling
 $(function () {
 
-    $("a.smooth-scroll").click(function(event){
+    $("a.smooth-scroll").click(function (event) {
         event.preventDefault();
 
         // get/return id like #about, #work, #team and etc
@@ -108,6 +140,15 @@ $(function () {
         $("html, body").animate({
             scrollTop: $(section).offset().top - 65
         }, 1250, "easeInOutExpo");
+    });
+
+});
+
+// Close mobile menu on click
+$(function () {
+
+    $(".navbar-collapse ul li a").on("click touch", function () {
+        $(".navbar-toggle").click();
     });
 
 });
