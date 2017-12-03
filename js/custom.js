@@ -22,7 +22,7 @@ $(function () {
 });
 
 /*=================================================
-                    WORK
+                    TEAM
 ===================================================*/
 $(function () {
 
@@ -35,17 +35,43 @@ $(function () {
     });
 
 });
+
 /*=================================================
                     TESTIMONIALS
 ===================================================*/
 $(function () {
-    
-        $("#customers-testimonials").owlCarousel({
-            items: 1,
-            autoplay: true,
-            smartSpeed: 700,
-            loop: true,
-            autoplayHoverPause: true
-        });
-    
+
+    $("#customers-testimonials").owlCarousel({
+        items: 1,
+        autoplay: true,
+        smartSpeed: 700,
+        loop: true,
+        autoplayHoverPause: true
     });
+
+});
+/*=================================================
+                    COUNTER
+===================================================*/
+$(function () {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
+
+});
+
+/*=================================================
+                    CLIENT
+===================================================*/
+$(function () {
+
+    $("#clients-list").owlCarousel({
+        items: 6,
+        autoplay: true,
+        smartSpeed: 700,
+        loop: true,
+        autoplayHoverPause: true
+    });
+
+});
