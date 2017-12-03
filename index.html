@@ -36,7 +36,68 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="65">
+
+    <header>
+
+        <nav class="navbar  navbar-fixed-top" role="navigation">
+
+            <div class="vesco-nav-wrapper">
+
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vesco-menu" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#home">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="vesco-menu">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="smooth-scroll" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="smooth-scroll" href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a class="smooth-scroll" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="smooth-scroll" href="#work">Work</a>
+                        </li>
+                        <li>
+                            <a class="smooth-scroll" href="#team">Team</a>
+                        </li>
+                        <li>
+                            <a class="smooth-scroll" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li>
+                            <a class="smooth-scroll" href="#pricing">Pricing</a>
+                        </li>
+                        <li>
+                            <a class="smooth-scroll" href="#stats">Stats</a>
+                        </li>
+                        <li>
+                            <a class="smooth-scroll" href="#clients">Clients</a>
+                        </li>
+                        <li>
+                            <a class="smooth-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
 
     <!-- Home -->
     <section id="home">
@@ -53,7 +114,7 @@
                         </h3>
                     </div>
                     <div id="home-btn" class="animated zoomIn">
-                        <a class="btn btn-lg btn-general btn-white" href="#work" role="button" title="View Our Work">View Our Work</a>
+                        <a class="smooth-scroll btn btn-lg btn-general btn-white" href="#work" role="button" title="View Our Work">View Our Work</a>
                     </div>
 
                 </div>
@@ -232,7 +293,7 @@
 
                                 <div id="about-btn" class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
 
-                                    <a href="#work" class="btn btn-lg btn-general btn-blue" role="button">Our Work</a>
+                                    <a href="#work" class="smooth-scroll btn btn-lg btn-general btn-blue" role="button">Our Work</a>
                                 </div>
 
                             </div>
@@ -900,13 +961,27 @@
                     <div class="col-md-6">
                         <div id="footer-menu">
                             <ul>
-                                <li><a href="http://">Home</a>/</li>
-                                <li><a href="http://">Services</a>/</li>
-                                <li><a href="http://">Work</a>/</li>
-                                <li><a href="http://">Team</a>/</li>
-                                <li><a href="http://">Testimonials</a>/</li>
-                                <li><a href="http://">Pricing</a>/</li>
-                                <li><a href="http://">Stats</a></li>
+                                <li>
+                                    <a class="smooth-scroll" href="#home">Home</a>
+                                </li>
+                                <li>
+                                    <a class="smooth-scroll" href="#services">Services</a>
+                                </li>
+                                <li>
+                                    <a class="smooth-scroll" href="#work">Work</a>
+                                </li>
+                                <li>
+                                    <a class="smooth-scroll" href="#team">Team</a>
+                                </li>
+                                <li>
+                                    <a class="smooth-scroll" href="#testimonials">Testimonials</a>
+                                </li>
+                                <li>
+                                    <a class="smooth-scroll" href="#pricing">Pricing</a>
+                                </li>
+                                <li>
+                                    <a class="smooth-scroll" href="#stats">Stats</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -914,6 +989,11 @@
                 </div>
             </div>
         </div>
+
+        <a href="#home" id="back-to-top" class="btn btn-sm- btn-blue btn-back-to-top smooth-scroll" title="home" role="button">
+            <i class="fa fa-angle-up"></i>
+        </a>
+
 
     </footer>
 
@@ -942,6 +1022,9 @@
     <!-- Counter JS -->
     <script src="js/counter/jquery.waypoints.min.js"></script>
     <script src="js/counter/jquery.counterup.min.js"></script>
+
+    <!-- Easing JS -->
+    <script src="js/easing/jquery.easing.js"></script>
 
     <!-- Custom JS -->
     <script src="js/custom.js"></script>
